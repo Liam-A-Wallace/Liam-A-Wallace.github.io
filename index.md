@@ -1,9 +1,7 @@
 ---
 layout: home
-title: Home
----
 
-# 👋 Hi, I'm Liam Wallace
+---
 
 **Third-Year Computer Science Student @ University of St Andrews**  
 *Dean's List 2025 | First-Class Standing | Seeking Summer 2026 Internships*
@@ -12,7 +10,7 @@ Welcome to my technical portfolio! I'm passionate about building innovative soft
 
 ---
 
-## 🎓 Education & Background
+##  Education & Background
 
 **University of St Andrews** - B.Sc. Hons Computer Science (Expected 1st, 2027)  
 *Dean's List 2025 (82.5%+ average)* | *Modules: Databases, OS, AI, Advanced Networks, Web Dev*
@@ -21,7 +19,7 @@ Welcome to my technical portfolio! I'm passionate about building innovative soft
 
 ---
 
-## 💼 Professional Experience
+##  Professional Experience
 
 **BlackRock, Edinburgh** - Spring Internship, Software Engineering (April 2025)  
 - Collaborated on financial problem-solving using software tools and data analysis
@@ -34,7 +32,7 @@ Welcome to my technical portfolio! I'm passionate about building innovative soft
 
 ---
 
-## 🚀 Technical Projects
+##  Technical Projects
 
 <div class="project-grid">
 {% for project in site.projects %}
@@ -57,7 +55,7 @@ Welcome to my technical portfolio! I'm passionate about building innovative soft
 
 ---
 
-## 🛠️ Technical Skills
+##  Technical Skills
 
 **Programming:** Python, Java, C, Haskell, JavaScript, PHP  
 **Web Development:** HTML/CSS, MySQL, MongoDB, Flask, Node.js  

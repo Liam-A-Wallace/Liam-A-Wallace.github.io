@@ -2,7 +2,7 @@
 layout: project
 title: "System Resource Monitor"
 description: "Terminal-based system monitor in C displaying real-time CPU, memory, and disk usage with logging capabilities"
-technologies: [C, Linux, System Programming]
+
 github_url: https://github.com/Liam-A-Wallace/SystemResources  # Add your actual GitHub URL
 ---
 
