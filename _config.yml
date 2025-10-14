@@ -1,0 +1,33 @@
+# _config.yml
+title: Liam Wallace - Computer Science Portfolio
+email: Liam.Wallace05@Outlook.com
+description: >-
+  Third-year Computer Science student at University of St Andrews | Dean's List | Python, Java, C, Full-Stack Development
+baseurl: ""
+url: ""
+
+github_username: Liam-A-Wallace  # Update this with your actual GitHub
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: "_projects"  # ← Applies to files in the _projects folder
+      type: "projects"
+    values:
+      layout: "project"  # ← Now uses the page layout
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
