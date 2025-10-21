@@ -6,7 +6,7 @@ layout: home
 **Third-Year Computer Science Student @ University of St Andrews**  
 *Dean's List 2025 | First-Class Standing | Seeking Summer 2026 Internships*
 
-Welcome to my technical portfolio! I'm passionate about building software solutions with expertise in Python, C, Java, and C++. I am currently exploring opportunities in software engineering roles.
+Welcome to my technical portfolio! I'm passionate about building software solutions with expertise in Python, C, Java, and C++. I am currently exploring opportunities in a variety of software engineering roles to further develop my programming and technical abilities.
 
 ---
 
@@ -15,7 +15,8 @@ Welcome to my technical portfolio! I'm passionate about building software soluti
 **University of St Andrews** - B.Sc. Hons Computer Science (Expected 1st, 2027)  
 *Dean's List 2025 (82.5%+ average)* | *Modules: Databases, OS, AI, Advanced Networks, Web Dev*
 
-**Previous Education:** Forth Valley College (Software Development), Lornshill Academy
+**Previous Education:** Forth Valley College Foundation Apprenticeship in Software Development 
+Lornshill Academy: SQA Highers AAABB
 
 ---
 
