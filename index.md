@@ -6,7 +6,7 @@ layout: home
 **Third-Year Computer Science Student @ University of St Andrews**  
 *Dean's List 2025 | First-Class Standing | Seeking Summer 2026 Internships*
 
-Welcome to my technical portfolio! I'm passionate about building innovative software solutions with expertise in Python, C, Java, and full-stack development. Currently exploring opportunities in software engineering roles.
+Welcome to my technical portfolio! I'm passionate about building software solutions with expertise in Python, C, Java, and C++. I am currently exploring opportunities in software engineering roles.
 
 ---
 
@@ -57,7 +57,7 @@ Welcome to my technical portfolio! I'm passionate about building innovative soft
 
 ##  Technical Skills
 
-**Programming:** Python, Java, C, Haskell, JavaScript, PHP  
+**Programming:** Python, Java, C, Haskell, JavaScript, PHP, C++  
 **Web Development:** HTML/CSS, MySQL, MongoDB, Flask, Node.js  
 **Tools & Frameworks:** Git, JUnit, Jupyter, MatPlotLib, Linux
 
