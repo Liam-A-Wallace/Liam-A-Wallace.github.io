@@ -1,14 +1,12 @@
 ---
 layout: home
-title: Home
----
 
 #  Hi, I'm Liam Wallace
 
 **Third-Year Computer Science Student @ University of St Andrews**  
 *Dean's List 2025 | First-Class Standing | Seeking Opportunities in Technology and Software Engineering*
 
-Welcome to my technical portfolio! I'm passionate about building innovative software solutions with expertise in Python, C, Java, and full-stack development. Currently exploring opportunities in software engineering roles.
+Welcome to my technical portfolio! I'm passionate about building software solutions with expertise in Python, C, Java, and C++. I am currently exploring opportunities in a variety of software engineering roles to further develop my programming and technical abilities.
 
 ---
 
@@ -17,7 +15,9 @@ Welcome to my technical portfolio! I'm passionate about building innovative soft
 **University of St Andrews** - B.Sc. Hons Computer Science (Expected 2:1, 2027)  
 *Dean's List 2025 (82.5%+ average)* | *Modules: Databases, OS, AI, Advanced Networks, Web Dev*
 
-**Previous Education:** Forth Valley College (Software Development), Lornshill Academy
+**Previous Education:** 
+- **Forth Valley College** Foundation Apprenticeship in Software Development 
+- **Lornshill Academy** SQA Highers AAABB
 
 ---
 
