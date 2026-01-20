@@ -1,10 +1,10 @@
 ---
 layout: home
-
-#  Hi, I'm Liam Wallace
+title: Liam Wallace
+---
 
 **Third-Year Computer Science Student @ University of St Andrews**  
-*Dean's List 2025 | First-Class Standing | Seeking Opportunities in Technology and Software Engineering*
+*Dean's List 2025 | 2:1 Standing | Seeking Opportunities in Technology and Software Engineering*
 
 Welcome to my technical portfolio! I'm passionate about building software solutions with expertise in Python, C, Java, and C++. I am currently exploring opportunities in a variety of software engineering roles to further develop my programming and technical abilities.
 
@@ -62,7 +62,9 @@ Welcome to my technical portfolio! I'm passionate about building software soluti
 ##  Technical Skills
 
 **Programming:** Python, Java, C/C++, Haskell
+
 **Web Development:** HTML/CSS, MySQL, PHP, JavaScript
+
 **Tools & Frameworks:** Git, JUnit, Jupyter, MatPlotLib, Docker, Flask, Node
 
 ---
