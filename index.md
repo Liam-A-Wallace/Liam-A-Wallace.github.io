@@ -13,11 +13,11 @@ Welcome to my technical portfolio! I'm passionate about building software soluti
 ##  Education & Background
 
 **University of St Andrews** - B.Sc. Hons Computer Science (Expected 2:1, 2027)  
-*Dean's List 2025 (82.5%+ average)* | *Modules: Databases, OS, AI, Advanced Networks, Web Dev*
+*Dean's List 2025 (82.5%+ average)* | *Modules: Databases, Operating Systems, Artificial Intelligence, Advanced Networking, Web Development, Computer Systems*
 
 **Previous Education:** 
 - **Forth Valley College** Foundation Apprenticeship in Software Development 
-- **Lornshill Academy** SQA Highers AAABB
+- **Lornshill Academy** SQA Highers AAABB (Mathematics, Computer Science, Engish, Physics, Engineering Science)
 
 ---
 
