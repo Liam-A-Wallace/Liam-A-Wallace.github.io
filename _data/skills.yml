@@ -1,0 +1,8 @@
+- category: Languages
+  items: [Python, C, C++, Java, JavaScript, PHP, Haskell, q]
+- category: Frameworks & Libraries
+  items: [Pandas, Node.js, Jupyter]
+- category: Databases
+  items: [MySQL, MongoDB, Snowflake, SQL]
+- category: Technologies
+  items: [Docker, Kubernetes, Kafka, REST APIs]

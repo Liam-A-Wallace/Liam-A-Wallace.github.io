@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-kicker">{{ site.data.profile.status }}</p>
+    <h1 class="hero-name">{{ site.data.profile.name }}</h1>
+    <p class="hero-role">{{ site.data.profile.role }}</p>
+    <p class="hero-summary">{{ site.data.profile.summary }}</p>
+    <div class="hero-links">
+      {% for link in site.data.profile.contact %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    <p class="hero-location">{{ site.data.profile.location }}</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2 class="section-heading"><span class="section-index">01</span> Experience</h2>
+    <div class="timeline">
+      {% for job in site.data.experience %}
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-period">{{ job.period }}</span>
+          <span class="timeline-location">{{ job.location }}</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="entry-title">{{ job.title }}</h3>
+          <p class="entry-org">{{ job.org }}{% if job.group %} <span class="entry-group">· {{ job.group }}</span>{% endif %}</p>
+          <ul class="entry-bullets">
+            {% for bullet in job.bullets %}
+            <li>{{ bullet }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-heading"><span class="section-index">02</span> Projects</h2>
+    <div class="project-grid">
+      {% for project in site.projects %}
+      <a class="project-card" href="{{ project.url | relative_url }}">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-desc">{{ project.description }}</p>
+        {% if project.technologies %}
+        <ul class="tech-tags">
+          {% for tech in project.technologies %}
+          <li>{{ tech }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        <span class="project-link">Read more →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2 class="section-heading"><span class="section-index">03</span> Education</h2>
+    <div class="timeline">
+      {% for item in site.data.education %}
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-period">{{ item.period }}</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="entry-title">{{ item.qualification }}</h3>
+          <p class="entry-org">{{ item.institution }}</p>
+          {% if item.bullets %}
+          <ul class="entry-bullets">
+            {% for bullet in item.bullets %}
+            <li>{{ bullet }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-heading"><span class="section-index">04</span> Skills</h2>
+    <div class="skill-groups">
+      {% for group in site.data.skills %}
+      <div class="skill-group">
+        <h3 class="skill-category">{{ group.category }}</h3>
+        <ul class="skill-chips">
+          {% for item in group.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

@@ -1,51 +1,26 @@
 ---
 layout: project
 title: "Football Statistics Analysis System"
-description: "Automated data pipeline collecting 20+ metrics from 400+ weekly player/team records with interactive visualizations"
-
-github_url: https://github.com/Liam-A-Wallace/footballScraper  # Add your actual GitHub URL
+description: "Modular Python pipeline that collects, cleans, and analyses Scottish Premiership league and player statistics, with SQLite/CSV export and interactive visualisations."
+technologies: [Python, BeautifulSoup, SQLite, Pandas, Matplotlib, Plotly]
+github_url: https://github.com/Liam-A-Wallace/footballScraper
 ---
 
-## Project Overview
+## What it does
 
-I developed a comprehensive football statistics analysis system that automates data collection, processing, and visualization for the Scottish Premiership. The system gathers extensive player and team data from FBRef, processes it through a robust pipeline, and provides interactive analysis tools.
+Collects Scottish Premiership league and player statistics, then runs them through a cleaning and validation pipeline before storage and analysis. A command-line interface drives scraping or a synthetic-data generator, and the results land in SQLite or CSV ready for exploration.
 
-## Key Features
+## How it's built
 
-- **Automated Data Scraping:** Collects 20+ player metrics and team statistics from FBRef
-- **Multi-format Storage:** Supports both CSV and SQLite database storage with upsert operations
-- **Interactive Analysis:** CLI interface with multiple visualization options including bar charts, radar charts, and scatter plots
-- **Data Validation:** Comprehensive cleaning pipeline handling missing values, data type conversion, and outlier removal
-- **Relationship Mapping:** Database relationships between players and teams with foreign key constraints
+- **Scraping** — a `requests` session with a descriptive user agent and retry/backoff; columns are keyed by FBRef's stable `data-stat` attributes rather than header text, so the parser survives season-to-season markup changes.
+- **Cleaning** — typed, data-driven conversion: integers, floats, comma stripping, and age parsing ("23-056" → 23).
+- **Storage** — SQLite with upsert-on-rerun and a composite `(Player, Team)` key, so two clubs can field players with the same name; CSV export included.
+- **Analysis** — Pandas for statistical work, Matplotlib/Seaborn for static charts, and Plotly for interactive ones (standings, radar, scatter).
+- **Demo mode** — a reproducible synthetic-data generator exercises the full pipeline offline, which keeps development and testing going now that FBRef blocks automated requests.
 
-## Technical Implementation
+## Notable problems solved
 
-The system is built with a modular Python architecture separating concerns into distinct components:
-
-**Data Collection Layer**
-
-BeautifulSoup web scraping with rate limiting and error handling
-Dynamic URL discovery and cleaning for team-specific pages
-Header normalization for complex table structures with duplicate columns
-
-**Data Processing Pipeline**
-
-Type conversion and data validation in cleaner modules
-Calculation of derived metrics (goals per minute, efficiency rates)
-Handling of edge cases (multiple nationalities, position variations)
-
-**Storage & Analysis**
-
-SQLite with proper schema design and foreign key relationships
-Pandas for data manipulation and statistical analysis
-Matplotlib/Seaborn for static visualizations and Plotly for interactive charts
-
-## Challenges & Solutions
-
-**Web Scraping Complexity:** FBRef uses complex table structures with nested headers. Solved by implementing multi-level header parsing and duplicate column resolution.
-
-**Data Consistency:** Player names and team data required extensive cleaning. Developed normalization functions handling special characters, multiple positions, and inconsistent formatting.
-
-**Performance Optimization:** Rate limiting between requests to avoid being blocked, while maintaining acceptable scrape times for 12 teams and 400+ players.
-
-**Database Integrity:** Implemented UPSERT operations to handle incremental updates and maintain referential integrity between league and player tables.
+- **Fragile scraping** — replaced hardcoded season table ids and header-text parsing with dynamic table discovery and `data-stat` column mapping.
+- **Data consistency** — typed cleaning and normalisation so numeric columns are stored as numbers, not strings.
+- **Polite fetching** — user-agent header, exponential backoff, and a random 5–9s delay between requests.
+- **Integrity** — upsert operations keep league and player tables consistent across runs.

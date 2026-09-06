@@ -2,26 +2,30 @@
 layout: default
 ---
 
-<article class="project">
-  <header class="project-header">
-    <h1>{{ page.title }}</h1>
-    <p class="project-description">{{ page.description }}</p>
-    {% if page.technologies %}
-    <div class="tech-tags">
-      {% for tech in page.technologies %}
-      <span class="tech-tag">{{ tech }}</span>
-      {% endfor %}
+<article class="project-page">
+  <div class="container">
+    <a class="back-link" href="{{ '/' | relative_url }}#projects">← Back to projects</a>
+
+    <header class="project-header">
+      <h1>{{ page.title }}</h1>
+      <p class="project-description">{{ page.description }}</p>
+      {% if page.technologies %}
+      <ul class="tech-tags">
+        {% for tech in page.technologies %}
+        <li>{{ tech }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </header>
+
+    <div class="project-content">
+      {{ content }}
     </div>
+
+    {% if page.github_url %}
+    <footer class="project-footer">
+      <a class="btn" href="{{ page.github_url }}">View on GitHub</a>
+    </footer>
     {% endif %}
-  </header>
-
-  <div class="project-content">
-    {{ content }}
   </div>
-
-  {% if page.github_url %}
-  <footer class="project-footer">
-    <a href="{{ page.github_url }}" class="btn">View on GitHub</a>
-  </footer>
-  {% endif %}
 </article>

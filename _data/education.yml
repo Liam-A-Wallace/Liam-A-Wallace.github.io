@@ -1,0 +1,20 @@
+- institution: University of St Andrews
+  period: Expected 2027
+  qualification: BSc (Hons) Computer Science — Expected 2:1
+  bullets:
+    - Dean's List 2025 — 82.5%+ average across all modules.
+    - Scholarships from the Robertson Trust and Morgan Stanley Social Mobility programmes for academic achievement.
+    - "Modules: Databases, Operating Systems, Artificial Intelligence, Computer Systems, Advanced Communication Networks and Systems, Distributed Systems, Data-Intensive Systems."
+    - Additional study in Psychology covering cognition and behavioural analysis.
+
+- institution: Forth Valley College
+  period: 2021 – 2023
+  qualification: Foundation Apprenticeship in Software Development
+  bullets:
+    - Developed an international student website prototype as a final project, applying object-oriented and database design principles.
+
+- institution: Lornshill Academy
+  period: 2023
+  qualification: Secondary Education
+  bullets:
+    - "Highers: Mathematics (A), English (A), Computer Science (A), Physics (B), Engineering Science (B)."

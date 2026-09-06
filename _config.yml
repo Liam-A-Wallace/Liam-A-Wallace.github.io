@@ -1,16 +1,20 @@
 # _config.yml
-title: Liam Wallace - Portfolio
+title: Liam Wallace
 email: Liam.Wallace05@Outlook.com
 description: >-
-  Third-year Computer Science student at University of St Andrews | Dean's List | Python, Java, C, Haskell, Full-Stack, C++
+  Final year Computer Science student at the University of St Andrews.
+  Building scalable, high-performance software for data-intensive applications.
 baseurl: ""
 url: ""
 
-github_username: Liam-A-Wallace  # Update this with your actual GitHub
+github_username: Liam-A-Wallace
 
 theme: minima
 plugins:
   - jekyll-feed
+
+sass:
+  quiet_deps: true
 
 collections:
   projects:
