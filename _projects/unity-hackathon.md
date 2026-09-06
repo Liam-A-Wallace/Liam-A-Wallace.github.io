@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "STACSHACK 2025 — Buzzy Bees"
+title: "STACSHACK 2025 – Buzzy Bees"
 description: "Multi-level 3D first-person shooter built in Unity over a 24-hour hackathon."
 technologies: ["C#", "Unity"]
 github_url: https://github.com/Liam-A-Wallace/STACSHack2025

@@ -1,24 +1,23 @@
 - org: Morgan Stanley
   location: Glasgow
   period: Jun – Aug 2026
-  title: Summer Analyst — Application Developer, AI Gateway
-  group: Enterprise Technology Services
+  title: Summer Analyst – Application Developer
   bullets:
-    - Improved the reliability of auditing data streams by monitoring and troubleshooting Kafka and Kubernetes infrastructure — resolved 3 production errors and cut pod downtime from days to hours.
-    - Automated a manual data-extraction and reporting workflow in Python, reducing a 30-minute daily task to under a minute with unattended, scheduled execution.
-    - Redesigned internal onboarding documentation for the AI Gateway team, simplifying technical setup for teams adopting the service.
+    - Improved the reliability of auditing data streams by monitoring and troubleshooting Kafka and Kubernetes infrastructure, resolving 3 production errors and reducing pod downtime from days to hours.
+    - Automated a manual data extraction and reporting workflow in Python, cutting a 30-minute daily task to under a minute and enabling unattended, scheduled execution.
+    - Redesigned internal onboarding documentation for the AI Gateway team, simplifying technical setup and improving the experience for teams adopting the service.
 
 - org: Glencore
   location: London
   period: May 2026
   title: Technology in Trading Insight Programme
   bullets:
-    - Explored how AI agents turn unstandardised, noisy commodity data into usable trading insights.
+    - Participated in an insight programme on technology in commodities trading, exploring the use of AI agents to process unstandardised and noisy data into usable insights.
 
 - org: BlackRock
   location: Edinburgh
   period: Apr 2025
-  title: Spring Intern — Software Engineering
+  title: Spring Intern – Software Engineering
   bullets:
     - Analysed a real-world financial case study as part of a team, identifying improvements to the follow-the-sun support model.
     - Supported investigation of production issues affecting financial data pipelines and system reliability.
